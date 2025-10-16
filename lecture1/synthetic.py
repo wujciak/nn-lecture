@@ -28,4 +28,4 @@ ax.scatter(map[:, 0], map[:, 1], c=distance, cmap="coolwarm")
 ax.scatter(X[:, 0], X[:, 1], c=y, cmap="bwr_r")
 
 plt.tight_layout()
-plt.savefig('l1/foo.png')
+plt.savefig('lecture1/foo.png')
