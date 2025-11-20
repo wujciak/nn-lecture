@@ -27,7 +27,7 @@ for i, (train_index, test_index) in enumerate(rskf.split(X, y)):
     X_test, y_test = X[test_index], y[test_index]
     
     for clf_id, clf_name in enumerate(clfs.keys()):
-        clf = clone(clfs[clf_name]).git(X_train, y_train)
+        clf = clone(clfs[clf_name]).fit(X_train, y_train)
         preds = clf.predict(X_test)
         score = bac(y_test, preds)
         scores[clf_id, i] = score
